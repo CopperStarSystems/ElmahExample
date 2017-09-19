@@ -31,5 +31,10 @@ namespace ElmahProofOfConcept.Controllers
         {
             throw new Exception("Non-Http Error thrown in Controller");
         }
+
+        public ActionResult ViewError()
+        {
+            return View();
+        }
     }
 }
