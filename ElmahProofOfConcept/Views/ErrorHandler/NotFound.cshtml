@@ -1,0 +1,8 @@
+﻿@model dynamic
+@{
+    // This is important - It tells the caller that the original resource
+    // could not be found.  Without it, the StatusCode is 200 OK because we
+    // successfully served this view.
+    Context.Response.StatusCode = 404;
+}
+<h1>404 Not Found.</h1>
