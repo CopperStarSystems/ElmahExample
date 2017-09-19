@@ -16,14 +16,24 @@ namespace ElmahProofOfConcept.Controllers
             return View();
         }
 
-        public ActionResult NotFound(string aspxerrorpath)
+        public ActionResult NotFound()
         {
-            ViewData.Add(new KeyValuePair<string, object>("NotFoundUrl", aspxerrorpath));
+            ViewData.Add(new KeyValuePair<string, object>("NotFoundUrl", HttpContext.Request.RawUrl));
 
             return View();
         }
 
+        public ActionResult Unauthorized()
+        {
+            return View();
+        }
+
         public ActionResult ServerError()
+        {
+            return View();
+        }
+
+        public ActionResult ApplicationError()
         {
             return View();
         }

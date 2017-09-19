@@ -122,6 +122,8 @@
     <Content Include="DefaultError.html" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\ErrorHandler\ServerError.cshtml" />
+    <Content Include="Views\ErrorHandler\Unauthorized.cshtml" />
+    <Content Include="Views\ErrorHandler\ApplicationError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

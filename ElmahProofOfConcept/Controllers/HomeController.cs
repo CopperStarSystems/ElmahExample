@@ -4,6 +4,7 @@
 //  --------------------------------------------------------------------------------------
 
 using System;
+using System.Web;
 using System.Web.Mvc;
 
 namespace ElmahProofOfConcept.Controllers
@@ -18,7 +19,17 @@ namespace ElmahProofOfConcept.Controllers
 
         public ActionResult ServerError()
         {
-            throw new Exception("Server Error.");
+            throw new HttpException(500, "Simulated MVC 500 Error");
+        }
+
+        public ActionResult Unauthorized()
+        {
+            return new HttpUnauthorizedResult();
+        }
+
+        public ActionResult NonHttpError()
+        {
+            throw new Exception("Non-Http Error thrown in Controller");
         }
     }
 }
