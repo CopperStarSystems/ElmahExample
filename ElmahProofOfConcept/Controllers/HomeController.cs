@@ -1,31 +1,24 @@
 ﻿//  --------------------------------------------------------------------------------------
-// ElmahProofOfConcept.ErrorHandlerController.cs
+// ElmahProofOfConcept.HomeController.cs
 // 2017/09/19
 //  --------------------------------------------------------------------------------------
 
-using System.Collections.Generic;
+using System;
 using System.Web.Mvc;
 
 namespace ElmahProofOfConcept.Controllers
 {
-    public class ErrorHandlerController : Controller
+    public class HomeController : Controller
     {
-        // GET: ErrorHandler
+        // GET: Home
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult NotFound(string aspxerrorpath)
-        {
-            ViewData.Add(new KeyValuePair<string, object>("NotFoundUrl", aspxerrorpath));
-
-            return View();
-        }
-
         public ActionResult ServerError()
         {
-            return View();
+            throw new Exception("Server Error.");
         }
     }
 }
