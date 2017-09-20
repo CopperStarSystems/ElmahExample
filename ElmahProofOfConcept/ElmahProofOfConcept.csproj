@@ -116,6 +116,7 @@
     <Compile Include="ThrowExceptionHandler.ashx.cs">
       <DependentUpon>ThrowExceptionHandler.ashx</DependentUpon>
     </Compile>
+    <Compile Include="ThrowExceptionModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -129,6 +130,7 @@
     <Content Include="Views\ErrorHandler\ApplicationError.cshtml" />
     <Content Include="Views\Home\ViewError.cshtml" />
     <Content Include="ThrowExceptionHandler.ashx" />
+    <Content Include="Views\Home\ModuleError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

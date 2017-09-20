@@ -37,5 +37,7 @@ namespace ElmahProofOfConcept.Controllers
         {
             return View();
         }
+
+       
     }
 }

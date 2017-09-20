@@ -36,5 +36,10 @@ namespace ElmahProofOfConcept.Controllers
         {
             return View();
         }
+
+        public ActionResult ModuleError()
+        {
+            return View();
+        }
     }
 }

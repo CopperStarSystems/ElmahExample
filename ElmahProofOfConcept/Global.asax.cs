@@ -44,7 +44,7 @@ namespace ElmahProofOfConcept
 
             httpContext.ClearError();
             httpContext.Response.Clear();
-
+            httpContext.Response.Write("This exception hit the global exception handler in MvcApplication.Application_Error.");
             // Don't do this in production, it's like this for
             // demonstration purposes.  Uncomment this to see how it would
             // actually behave in production.
